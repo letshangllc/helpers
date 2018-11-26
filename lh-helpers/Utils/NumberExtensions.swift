@@ -9,13 +9,13 @@
 import Foundation
 
 extension Int {
-    func format(f: String) -> String {
+    public func format(f: String) -> String {
         return String(format: "%\(f)d", self)
     }
 }
 
 extension Double {
-    func format(decimals: String) -> String {
+    public func format(decimals: String) -> String {
         return String(format: "%\(decimals)f", self)
     }
 }
