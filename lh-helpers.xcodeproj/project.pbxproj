@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		50D23E1171C0B95A45C3BFA7 /* Pods_lh_helpers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5DEF56EB20A4392FB71C142 /* Pods_lh_helpers.framework */; };
 		BDD83EEDD8E5F4599583D6B5 /* Pods_lh_helpersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B75C4F5EC4AEB1C3DDDC4413 /* Pods_lh_helpersTests.framework */; };
+		E022691D21AC5E4E0021F500 /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E022691821AC5E4E0021F500 /* DateUtils.swift */; };
+		E022691E21AC5E4E0021F500 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E022691921AC5E4E0021F500 /* ViewControllerExtension.swift */; };
+		E022691F21AC5E4E0021F500 /* AlertUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E022691A21AC5E4E0021F500 /* AlertUtils.swift */; };
+		E022692021AC5E4E0021F500 /* NumberExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E022691B21AC5E4E0021F500 /* NumberExtensions.swift */; };
+		E022692121AC5E4E0021F500 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E022691C21AC5E4E0021F500 /* ColorExtensions.swift */; };
 		E09D5CE221AAFF8E0010CD7F /* lh_helpers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E09D5CD821AAFF8E0010CD7F /* lh_helpers.framework */; };
 		E09D5CE721AAFF8E0010CD7F /* lh_helpersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09D5CE621AAFF8E0010CD7F /* lh_helpersTests.swift */; };
 		E09D5CE921AAFF8E0010CD7F /* lh_helpers.h in Headers */ = {isa = PBXBuildFile; fileRef = E09D5CDB21AAFF8E0010CD7F /* lh_helpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -30,6 +35,11 @@
 		B75C4F5EC4AEB1C3DDDC4413 /* Pods_lh_helpersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lh_helpersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5DEF56EB20A4392FB71C142 /* Pods_lh_helpers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lh_helpers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C84D6714D50B5E4B5881FA02 /* Pods-lh-helpers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lh-helpers.release.xcconfig"; path = "Pods/Target Support Files/Pods-lh-helpers/Pods-lh-helpers.release.xcconfig"; sourceTree = "<group>"; };
+		E022691821AC5E4E0021F500 /* DateUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
+		E022691921AC5E4E0021F500 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
+		E022691A21AC5E4E0021F500 /* AlertUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertUtils.swift; sourceTree = "<group>"; };
+		E022691B21AC5E4E0021F500 /* NumberExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberExtensions.swift; sourceTree = "<group>"; };
+		E022691C21AC5E4E0021F500 /* ColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
 		E09D5CD821AAFF8E0010CD7F /* lh_helpers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = lh_helpers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E09D5CDB21AAFF8E0010CD7F /* lh_helpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lh_helpers.h; sourceTree = "<group>"; };
 		E09D5CDC21AAFF8E0010CD7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -80,6 +90,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E022691721AC5CBF0021F500 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E022691A21AC5E4E0021F500 /* AlertUtils.swift */,
+				E022691C21AC5E4E0021F500 /* ColorExtensions.swift */,
+				E022691821AC5E4E0021F500 /* DateUtils.swift */,
+				E022691B21AC5E4E0021F500 /* NumberExtensions.swift */,
+				E022691921AC5E4E0021F500 /* ViewControllerExtension.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		E09D5CCE21AAFF8E0010CD7F = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +125,7 @@
 		E09D5CDA21AAFF8E0010CD7F /* lh-helpers */ = {
 			isa = PBXGroup;
 			children = (
+				E022691721AC5CBF0021F500 /* Utils */,
 				E09D5CDB21AAFF8E0010CD7F /* lh_helpers.h */,
 				E09D5CDC21AAFF8E0010CD7F /* Info.plist */,
 			);
@@ -182,6 +205,7 @@
 				TargetAttributes = {
 					E09D5CD721AAFF8E0010CD7F = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					E09D5CE021AAFF8E0010CD7F = {
 						CreatedOnToolsVersion = 10.1;
@@ -267,6 +291,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E022691E21AC5E4E0021F500 /* ViewControllerExtension.swift in Sources */,
+				E022692121AC5E4E0021F500 /* ColorExtensions.swift in Sources */,
+				E022691D21AC5E4E0021F500 /* DateUtils.swift in Sources */,
+				E022692021AC5E4E0021F500 /* NumberExtensions.swift in Sources */,
+				E022691F21AC5E4E0021F500 /* AlertUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +444,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B6D414DB4EA73A6149E1C7B3 /* Pods-lh-helpers.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -432,6 +462,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "letshang.lh-helpers";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -441,6 +472,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C84D6714D50B5E4B5881FA02 /* Pods-lh-helpers.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -467,6 +499,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9E8772A26E92743A2C199670 /* Pods-lh-helpersTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 56NQ7Z9L75;
 				INFOPLIST_FILE = "lh-helpersTests/Info.plist";
@@ -486,6 +519,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FDF6709290B24F4C68F2DD92 /* Pods-lh-helpersTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 56NQ7Z9L75;
 				INFOPLIST_FILE = "lh-helpersTests/Info.plist";
