@@ -59,4 +59,30 @@ public class AlertUtils {
             
         viewController.present(alert, animated: true, completion: nil)
     }
+    
+    /* Create an options menu given list of actions */
+    public static func createActionSheet(actions: [UIAlertAction], showCancel: Bool, viewController: UIViewController, message: String = "Choose Option") -> UIAlertController {
+        let actionSheet = UIAlertController(title: nil, message: message, preferredStyle: .actionSheet)
+        
+        for action in actions {
+            actionSheet.addAction(action)
+        }
+        
+        if(showCancel) {
+            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: {
+                (alert: UIAlertAction!) -> Void in
+                print("cancel")
+            })
+            
+            actionSheet.addAction(cancelAction)
+        }
+        
+        if let popoverController = actionSheet.popoverPresentationController {
+            popoverController.sourceView = viewController.view
+            popoverController.sourceRect = CGRect(x: viewController.view.bounds.midX, y: viewController.view.bounds.midY, width: 0, height: 0)
+            popoverController.permittedArrowDirections = []
+        }
+        
+        return actionSheet
+    }
 }

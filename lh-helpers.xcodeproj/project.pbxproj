@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		50D23E1171C0B95A45C3BFA7 /* Pods_lh_helpers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5DEF56EB20A4392FB71C142 /* Pods_lh_helpers.framework */; };
 		BDD83EEDD8E5F4599583D6B5 /* Pods_lh_helpersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B75C4F5EC4AEB1C3DDDC4413 /* Pods_lh_helpersTests.framework */; };
+		E01FC79D21ACB87200855D62 /* StringExtenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01FC79C21ACB87200855D62 /* StringExtenstions.swift */; };
 		E022691D21AC5E4E0021F500 /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E022691821AC5E4E0021F500 /* DateUtils.swift */; };
 		E022691E21AC5E4E0021F500 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E022691921AC5E4E0021F500 /* ViewControllerExtension.swift */; };
 		E022691F21AC5E4E0021F500 /* AlertUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E022691A21AC5E4E0021F500 /* AlertUtils.swift */; };
@@ -35,6 +36,7 @@
 		B75C4F5EC4AEB1C3DDDC4413 /* Pods_lh_helpersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lh_helpersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5DEF56EB20A4392FB71C142 /* Pods_lh_helpers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lh_helpers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C84D6714D50B5E4B5881FA02 /* Pods-lh-helpers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lh-helpers.release.xcconfig"; path = "Pods/Target Support Files/Pods-lh-helpers/Pods-lh-helpers.release.xcconfig"; sourceTree = "<group>"; };
+		E01FC79C21ACB87200855D62 /* StringExtenstions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtenstions.swift; sourceTree = "<group>"; };
 		E022691821AC5E4E0021F500 /* DateUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
 		E022691921AC5E4E0021F500 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
 		E022691A21AC5E4E0021F500 /* AlertUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertUtils.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				E022691821AC5E4E0021F500 /* DateUtils.swift */,
 				E022691B21AC5E4E0021F500 /* NumberExtensions.swift */,
 				E022691921AC5E4E0021F500 /* ViewControllerExtension.swift */,
+				E01FC79C21ACB87200855D62 /* StringExtenstions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 				E022691D21AC5E4E0021F500 /* DateUtils.swift in Sources */,
 				E022692021AC5E4E0021F500 /* NumberExtensions.swift in Sources */,
 				E022691F21AC5E4E0021F500 /* AlertUtils.swift in Sources */,
+				E01FC79D21ACB87200855D62 /* StringExtenstions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
