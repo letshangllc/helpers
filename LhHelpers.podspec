@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "LhHelpers"
-  s.version      = "0.0.1"
+  s.version      = "1.0.0"
   s.summary      = "LhHelpers is a pod full of helper functions and other goodies for iOS apps to use"
 
   # This description is used to generate tags and improve search results.
@@ -91,7 +91,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
+  s.source_files  = "lh-helpers", "lh-helpers/**/*.{h,m,swift}"
   s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
