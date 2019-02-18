@@ -23,7 +23,7 @@ public class AlertUtils {
         view.present(alert, animated: true, completion: nil)
     }
     
-    public static func createAlertTextCallback(view: UIViewController, title: String, message: String = "", placeholder: String, callback: @escaping (String) -> ()){
+    public static func createAlertTextCallback(view: UIViewController, title: String, message: String = "", placeholder: String, callback: @escaping (String) -> (), cancelCallback: (() -> ())? = nil){
         //. Create the alert controller.
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         
@@ -37,7 +37,9 @@ public class AlertUtils {
             callback((alert.textFields?[0].text)!)
         }))
         
-        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { _ in
+            cancelCallback?()
+        }))
         
         // 4. Present the alert.
         view.present(alert, animated: true, completion: nil)
