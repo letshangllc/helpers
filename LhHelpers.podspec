@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "LhHelpers"
-  s.version      = "1.3.1"
+  s.version      = "1.3.2"
   s.summary      = "LhHelpers is a pod full of helper functions and other goodies for iOS apps to use"
   s.description  = <<-DESC
 	This pod has helpers for iOS app development. It currently has helpers for alerts, colors, view controllers, and dates. 
