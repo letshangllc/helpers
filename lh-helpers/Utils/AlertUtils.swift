@@ -45,7 +45,9 @@ public class AlertUtils {
         view.present(alert, animated: true, completion: nil)
     }
     
-    public static func createAlertPicker (viewController: UIViewController, title: String, completion: @escaping (UIAlertAction) -> ()) {
+    public typealias PickerViewController = UIViewController & UIPickerViewDelegate & UIPickerViewDataSource
+    
+    public static func createAlertPicker (viewController: PickerViewController, title: String, completion: @escaping (UIAlertAction) -> ()) {
         // Message is blank 6 lines to make room for pickerview
         let alert = UIAlertController(title: title, message: "\n\n\n\n\n\n", preferredStyle: .alert)
         alert.isModalInPopover = true
@@ -53,8 +55,8 @@ public class AlertUtils {
         let pickerFrame = UIPickerView(frame: CGRect(x: 5, y: 25, width: 250, height: 140))
         
         alert.view.addSubview(pickerFrame)
-        pickerFrame.dataSource = viewController as? UIPickerViewDataSource
-        pickerFrame.delegate = viewController as? UIPickerViewDelegate
+        pickerFrame.dataSource = viewController
+        pickerFrame.delegate = viewController
         
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: completion))
