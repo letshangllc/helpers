@@ -1,7 +1,7 @@
 #!/bin/bash
 
 function specbump() {
-    print "Version $1"
+    echo "Version $1"
     git add .
     git commit -m "updated version to $1"
     git push
