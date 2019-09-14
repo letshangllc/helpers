@@ -29,7 +29,7 @@
 		048EE99D20704C42C5A25ACDB747546E /* Pods-lh-helpersTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-lh-helpersTests-Info.plist"; sourceTree = "<group>"; };
 		2E1A3EC69CCDBB5EC508CE232ACD88A8 /* Pods-lh-helpers-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-lh-helpers-acknowledgements.plist"; sourceTree = "<group>"; };
 		37C95CE52E0C7C9B877C74D642044B85 /* Pods-lh-helpersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-lh-helpersTests.release.xcconfig"; sourceTree = "<group>"; };
-		39824B2E502840D3F0234A7A69B0BAE3 /* Pods_lh_helpers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_lh_helpers.framework; path = "Pods-lh-helpers.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		39824B2E502840D3F0234A7A69B0BAE3 /* Pods_lh_helpers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lh_helpers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AADF40376A45C26571AF63253A3BC61 /* Pods-lh-helpers-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-lh-helpers-umbrella.h"; sourceTree = "<group>"; };
 		566CC4056F2E96718B5D30983EDE7634 /* Pods-lh-helpers-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-lh-helpers-Info.plist"; sourceTree = "<group>"; };
 		5A72090AA2B6917B111ED01DF1B1041D /* Pods-lh-helpers-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-lh-helpers-dummy.m"; sourceTree = "<group>"; };
@@ -37,11 +37,11 @@
 		75C9400D44356FFD4571FAC39D721019 /* Pods-lh-helpers.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-lh-helpers.modulemap"; sourceTree = "<group>"; };
 		86A5415964148F9B0245889870F403DF /* Pods-lh-helpersTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-lh-helpersTests.modulemap"; sourceTree = "<group>"; };
 		9B6CD10219A06CCA509BA868A7A13940 /* Pods-lh-helpers-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-lh-helpers-acknowledgements.markdown"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A52A9E5DE2DCA6E1643DF3F425104482 /* Pods-lh-helpersTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-lh-helpersTests-dummy.m"; sourceTree = "<group>"; };
 		B41BF73F03F73CFE18120CE2823EC21C /* Pods-lh-helpersTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-lh-helpersTests-umbrella.h"; sourceTree = "<group>"; };
 		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		DC3120C82913A1F55BB572B60B5986DD /* Pods_lh_helpersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_lh_helpersTests.framework; path = "Pods-lh-helpersTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC3120C82913A1F55BB572B60B5986DD /* Pods_lh_helpersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lh_helpersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEEF8447EC5473676AF85D30B34A55F3 /* Pods-lh-helpersTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-lh-helpersTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		DFE31D04A9EE1F0C4A7B1293FBD98405 /* Pods-lh-helpersTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-lh-helpersTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E1B9511C6422543B9AD570A56465BC0A /* Pods-lh-helpersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-lh-helpersTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -210,14 +210,15 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1030;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 9.3";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			productRefGroup = 51004237FCAD1B747F879C975B275BE4 /* Products */;
@@ -318,6 +319,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -378,6 +380,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
