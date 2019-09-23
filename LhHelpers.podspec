@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   s.author             = { "Chase Burnham" => "cburnham@letshang.us" }
 
   s.platform     = :ios, '10.3'
-  s.swift_version = "4.2"
+  s.swift_version = "5.0"
   s.source       = { :git => "https://github.com/letshangllc/helpers.git", :tag => "#{s.version}" }
   s.source_files  = "lh-helpers", "lh-helpers/**/*.{h,m,swift}"
   s.exclude_files = "Classes/Exclude"
