@@ -7,6 +7,12 @@
 //
 import UIKit
 
+public extension UIViewController {
+    func createAlert(title: String, message: String, completion: @escaping (UIAlertAction) -> () = {_ in }){
+        AlertUtils.createAlert(view: self, title: title, message: message, completion: completion)
+    }
+}
+
 public class AlertUtils {
     public static func createAlert(view: UIViewController, title: String, message: String, completion: @escaping (UIAlertAction) -> () = {_ in }){
         let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)

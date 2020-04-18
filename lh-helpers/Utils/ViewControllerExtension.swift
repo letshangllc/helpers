@@ -26,4 +26,34 @@ extension UIViewController {
         backItem.title = "Back"
         navigationItem.backBarButtonItem = backItem
     }
+    
+    // Starting with a parent controller, add or replace child view controller
+    public func transition(to newChild: UIViewController) {
+        let existingChild = children.last
+        addChild(newChild)
+        
+        guard let newChildView = newChild.view else {
+            return // TODO add completion
+        }
+        
+        newChildView.translatesAutoresizingMaskIntoConstraints = true
+        newChildView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        newChildView.frame = view.bounds
+        
+        if let existingChild = existingChild {
+            existingChild.willMove(toParent: nil)
+            
+            transition(from: existingChild, to: newChild, duration: 0.3, animations: nil) { _ in
+                existingChild.removeFromParent()
+                newChild.didMove(toParent: self)
+            } // TODO add animations and completion
+        } else {
+            view.addSubview(newChildView)
+            
+            UIView.animate(withDuration: 0.3, animations: { }) { _ in
+                newChild.didMove(toParent: self)
+                // call completion
+            }
+        }
+    }
 }

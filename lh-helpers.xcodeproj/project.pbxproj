@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		40EA3375567E665A9603D6C7 /* Pods_lh_helpersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0D8D85CC21F04396C403A5 /* Pods_lh_helpersTests.framework */; };
-		ABEDB90AC1D544F088C42558 /* Pods_lh_helpers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8465F970811520BCFBDF5152 /* Pods_lh_helpers.framework */; };
 		E01FC79D21ACB87200855D62 /* StringExtenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01FC79C21ACB87200855D62 /* StringExtenstions.swift */; };
 		E022691D21AC5E4E0021F500 /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E022691821AC5E4E0021F500 /* DateUtils.swift */; };
 		E022691E21AC5E4E0021F500 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E022691921AC5E4E0021F500 /* ViewControllerExtension.swift */; };
@@ -21,6 +20,7 @@
 		E09D5CE221AAFF8E0010CD7F /* lh_helpers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E09D5CD821AAFF8E0010CD7F /* lh_helpers.framework */; };
 		E09D5CE721AAFF8E0010CD7F /* lh_helpersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09D5CE621AAFF8E0010CD7F /* lh_helpersTests.swift */; };
 		E09D5CE921AAFF8E0010CD7F /* lh_helpers.h in Headers */ = {isa = PBXBuildFile; fileRef = E09D5CDB21AAFF8E0010CD7F /* lh_helpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0B7852A24410E8200818739 /* CellIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B7852924410E8200818739 /* CellIdentifiable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +53,7 @@
 		E09D5CE121AAFF8E0010CD7F /* lh-helpersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "lh-helpersTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E09D5CE621AAFF8E0010CD7F /* lh_helpersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lh_helpersTests.swift; sourceTree = "<group>"; };
 		E09D5CE821AAFF8E0010CD7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0B7852924410E8200818739 /* CellIdentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellIdentifiable.swift; sourceTree = "<group>"; };
 		E8EFB46CFBAAACB0C2B667B2 /* Pods-lh-helpersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lh-helpersTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-lh-helpersTests/Pods-lh-helpersTests.release.xcconfig"; sourceTree = "<group>"; };
 		F09F647C25725B944041EDBC /* Pods-lh-helpers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lh-helpers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-lh-helpers/Pods-lh-helpers.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,7 +63,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABEDB90AC1D544F088C42558 /* Pods_lh_helpers.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +98,7 @@
 				E022691B21AC5E4E0021F500 /* NumberExtensions.swift */,
 				E022691921AC5E4E0021F500 /* ViewControllerExtension.swift */,
 				E01FC79C21ACB87200855D62 /* StringExtenstions.swift */,
+				E0B7852924410E8200818739 /* CellIdentifiable.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -334,6 +335,7 @@
 				E022692121AC5E4E0021F500 /* ColorExtensions.swift in Sources */,
 				E022691D21AC5E4E0021F500 /* DateUtils.swift in Sources */,
 				E03095DF21B5684000771958 /* Observerables.swift in Sources */,
+				E0B7852A24410E8200818739 /* CellIdentifiable.swift in Sources */,
 				E02FAA7422EDD95C002177CA /* BaseViewController.swift in Sources */,
 				E022692021AC5E4E0021F500 /* NumberExtensions.swift in Sources */,
 				E022691F21AC5E4E0021F500 /* AlertUtils.swift in Sources */,

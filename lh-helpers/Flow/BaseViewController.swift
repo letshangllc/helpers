@@ -11,20 +11,27 @@ import Foundation
 public protocol BaseViewController: UIViewController {
     
     associatedtype BaseViewModel
+    associatedtype FlowDelegate
     
     var viewModel: BaseViewModel! { get set }
+    var flowDelegate: FlowDelegate? { get set }
+    
     static var storyboardName: String { get }
     static var viewControllerIdentifier: String { get }
 }
 
 public extension BaseViewController {
     
-    static func viewController<T: BaseViewController>(viewModel: BaseViewModel) -> T {
+    static var viewControllerIdentifier: String {
+        return String(describing: self)
+    }
+    
+    static func viewController(viewModel: BaseViewModel, flowDelegate: FlowDelegate? = nil) -> Self {
         let storyBoard: UIStoryboard = UIStoryboard(name: storyboardName, bundle: nil)
-        let vc = storyBoard.instantiateViewController(withIdentifier: viewControllerIdentifier) as! T
+        let vc = storyBoard.instantiateViewController(withIdentifier: viewControllerIdentifier) as! Self
         
-        vc.viewModel = viewModel as? T.BaseViewModel
-        
+        vc.viewModel = viewModel
+        vc.flowDelegate = flowDelegate
         return vc
     }
 }
