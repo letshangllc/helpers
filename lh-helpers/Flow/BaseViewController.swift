@@ -27,7 +27,7 @@ public extension BaseViewController {
     }
     
     static func viewController(viewModel: BaseViewModel, flowDelegate: FlowDelegate? = nil) -> Self {
-        let storyBoard: UIStoryboard = UIStoryboard(name: storyboardName, bundle: nil)
+        let storyBoard: UIStoryboard = UIStoryboard(name: storyboardName, bundle: Bundle(for: Self.self))
         let vc = storyBoard.instantiateViewController(withIdentifier: viewControllerIdentifier) as! Self
         
         vc.viewModel = viewModel

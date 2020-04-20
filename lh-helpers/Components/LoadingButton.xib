@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoadingButton" customModule="lh_helpers" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicator" destination="g8T-AK-0EX" id="IAR-PK-vl2"/>
+                <outlet property="button" destination="DjX-Pn-4LR" id="lnH-yV-dGY"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="42"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DjX-Pn-4LR">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="42"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="g8T-AK-0EX">
+                    <rect key="frame" x="197" y="11" width="20" height="20"/>
+                </activityIndicatorView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="DjX-Pn-4LR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="8II-d2-gSJ"/>
+                <constraint firstAttribute="bottom" secondItem="DjX-Pn-4LR" secondAttribute="bottom" id="DJh-Hv-DML"/>
+                <constraint firstItem="g8T-AK-0EX" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Wms-ff-WvQ"/>
+                <constraint firstItem="DjX-Pn-4LR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="bik-Dh-pO3"/>
+                <constraint firstAttribute="trailing" secondItem="DjX-Pn-4LR" secondAttribute="trailing" id="ntB-E4-1Zi"/>
+                <constraint firstItem="g8T-AK-0EX" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="wYW-FX-Wkc"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="132" y="147"/>
+        </view>
+    </objects>
+</document>
