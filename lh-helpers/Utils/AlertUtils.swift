@@ -8,8 +8,8 @@
 import UIKit
 
 public extension UIViewController {
-    func createAlert(title: String, message: String, completion: @escaping (UIAlertAction) -> () = {_ in }){
-        AlertUtils.createAlert(view: self, title: title, message: message, completion: completion)
+    func createAlert(title: String, message: String? = nil, completion: @escaping (UIAlertAction) -> () = {_ in }){
+        AlertUtils.createAlert(view: self, title: title, message: message ?? "", completion: completion)
     }
 }
 
