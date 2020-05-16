@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		40EA3375567E665A9603D6C7 /* Pods_lh_helpersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0D8D85CC21F04396C403A5 /* Pods_lh_helpersTests.framework */; };
+		E01FA6B12470171D00CF4868 /* UITableViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01FA6B02470171D00CF4868 /* UITableViewCell+Extensions.swift */; };
+		E01FA6B3247018B600CF4868 /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01FA6B2247018B600CF4868 /* Collection+Extensions.swift */; };
 		E01FC79D21ACB87200855D62 /* StringExtenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01FC79C21ACB87200855D62 /* StringExtenstions.swift */; };
 		E022691D21AC5E4E0021F500 /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E022691821AC5E4E0021F500 /* DateUtils.swift */; };
 		E022691E21AC5E4E0021F500 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E022691921AC5E4E0021F500 /* ViewControllerExtension.swift */; };
@@ -41,6 +43,8 @@
 		8465F970811520BCFBDF5152 /* Pods_lh_helpers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lh_helpers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A6E1C330A43CAD70C00060 /* Pods-lh-helpersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lh-helpersTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-lh-helpersTests/Pods-lh-helpersTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AB0D8D85CC21F04396C403A5 /* Pods_lh_helpersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lh_helpersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E01FA6B02470171D00CF4868 /* UITableViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extensions.swift"; sourceTree = "<group>"; };
+		E01FA6B2247018B600CF4868 /* Collection+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extensions.swift"; sourceTree = "<group>"; };
 		E01FC79C21ACB87200855D62 /* StringExtenstions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtenstions.swift; sourceTree = "<group>"; };
 		E022691821AC5E4E0021F500 /* DateUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
 		E022691921AC5E4E0021F500 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
@@ -105,6 +109,8 @@
 				E022691921AC5E4E0021F500 /* ViewControllerExtension.swift */,
 				E01FC79C21ACB87200855D62 /* StringExtenstions.swift */,
 				E0B7852924410E8200818739 /* CellIdentifiable.swift */,
+				E01FA6B02470171D00CF4868 /* UITableViewCell+Extensions.swift */,
+				E01FA6B2247018B600CF4868 /* Collection+Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -357,6 +363,8 @@
 				E0B7852A24410E8200818739 /* CellIdentifiable.swift in Sources */,
 				E09703B6244C8D8300E11E6E /* LoadingButton.swift in Sources */,
 				E02FAA7422EDD95C002177CA /* BaseViewController.swift in Sources */,
+				E01FA6B3247018B600CF4868 /* Collection+Extensions.swift in Sources */,
+				E01FA6B12470171D00CF4868 /* UITableViewCell+Extensions.swift in Sources */,
 				E022692021AC5E4E0021F500 /* NumberExtensions.swift in Sources */,
 				E022691F21AC5E4E0021F500 /* AlertUtils.swift in Sources */,
 				E01FC79D21ACB87200855D62 /* StringExtenstions.swift in Sources */,
