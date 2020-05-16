@@ -11,6 +11,11 @@ public extension UIViewController {
     func createAlert(title: String, message: String? = nil, completion: @escaping (UIAlertAction) -> () = {_ in }){
         AlertUtils.createAlert(view: self, title: title, message: message ?? "", completion: completion)
     }
+    
+    func createActionSheet(actions: [UIAlertAction], showCancel: Bool, message: String = "Choose Option") {
+        let actionSheet = AlertUtils.createActionSheet(actions: actions, showCancel: true, viewController: self)
+        present(actionSheet, animated: true, completion: nil)
+    }
 }
 
 public class AlertUtils {
