@@ -38,6 +38,16 @@ extension Date {
         return myCalendar.component(.weekday, from: self) - 1
     }
     
+    public var month: Int {
+        let myCalendar = Calendar(identifier: .gregorian)
+        return myCalendar.component(.month, from: self)
+    }
+    
+    public var dayOfMonth: Int {
+        let myCalendar = Calendar(identifier: .gregorian)
+        return myCalendar.component(.day, from: self)
+    }
+    
     public var tomorrow: Date {
         return Calendar.current.date(byAdding: .day, value: 1, to: self)!
     }
