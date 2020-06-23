@@ -9,8 +9,40 @@
 import UIKit
 
 // Put this piece of code anywhere you like
-extension UIViewController {
-    public func hideKeyboardWhenTappedAround() {
+public extension UIViewController {
+    @discardableResult func showActivityIndicator() -> UIView {
+        let container = UIView()
+        container.accessibilityIdentifier = "viewActivityIndicator"
+        let loadingView = UIView()
+        let activityIndicator = UIActivityIndicatorView()
+        
+        container.frame = view.frame
+        container.center = view.center
+        container.backgroundColor = UIColor(rgb: 0xffffff).withAlphaComponent(0.9)
+        
+        loadingView.frame = CGRect(origin: .zero, size: CGSize(width: 80, height: 80))
+        loadingView.center = view.center
+        loadingView.backgroundColor = UIColor(rgb: 0x444444).withAlphaComponent(0.7)
+        loadingView.clipsToBounds = true
+        loadingView.layer.cornerRadius = 10
+        
+        activityIndicator.frame = CGRect(origin: .zero, size: CGSize(width: 40, height: 40))
+        activityIndicator.style = .large
+        activityIndicator.center = CGPoint(x: loadingView.frame.size.width / 2, y: loadingView.frame.size.height / 2);
+        activityIndicator.hidesWhenStopped = true;
+        
+        loadingView.addSubview(activityIndicator)
+        container.addSubview(loadingView)
+        view.addSubview(container)
+        activityIndicator.startAnimating()
+        return container
+    }
+    
+    func removeActivityIndicator() {
+        view.subviews.first(where: { $0.accessibilityIdentifier == "viewActivityIndicator" })?.removeFromSuperview()
+    }
+    
+    func hideKeyboardWhenTappedAround() {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
         tap.cancelsTouchesInView = false
         view.addGestureRecognizer(tap)
@@ -21,14 +53,14 @@ extension UIViewController {
     }
     
     /* call function on Vc bbefore you push on top of it */
-    public func setBackButtonName() {
+    func setBackButtonName() {
         let backItem = UIBarButtonItem()
         backItem.title = "Back"
         navigationItem.backBarButtonItem = backItem
     }
     
     // Starting with a parent controller, add or replace child view controller
-    public func transition(to newChild: UIViewController) {
+    func transition(to newChild: UIViewController) {
         let existingChild = children.last
         addChild(newChild)
         

@@ -175,13 +175,13 @@
 		E09D5CDA21AAFF8E0010CD7F /* lh-helpers */ = {
 			isa = PBXGroup;
 			children = (
+				E09D5CDC21AAFF8E0010CD7F /* Info.plist */,
 				E09703B2244C8D5200E11E6E /* Components */,
 				E02FAA7222EDD94C002177CA /* Flow */,
 				E032307922D91F86000FC841 /* Api */,
 				E03095DD21B5682800771958 /* Observers */,
 				E022691721AC5CBF0021F500 /* Utils */,
 				E09D5CDB21AAFF8E0010CD7F /* lh_helpers.h */,
-				E09D5CDC21AAFF8E0010CD7F /* Info.plist */,
 			);
 			path = "lh-helpers";
 			sourceTree = "<group>";
