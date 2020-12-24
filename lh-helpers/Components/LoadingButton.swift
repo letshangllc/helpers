@@ -56,8 +56,8 @@ import UIKit
     }
     
     public func showSpinner(_ show: Bool) {
-        button.isHidden = !show
-        activityIndicator.isHidden = show
+        button.isHidden = show
+        activityIndicator.isHidden = !show
     }
     
     @objc func buttonTapped() {
