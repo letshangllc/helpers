@@ -88,4 +88,18 @@ public extension UIViewController {
             }
         }
     }
+
+    /// Add a child view controller to a container view within self
+    /// - Parameters:
+    ///   - childViewController: view controller to add to as child
+    ///   - containerView: view in which to put view controller
+    func addChildViewControllerToContainer(_ childViewController: UIViewController, containerView: UIView) {
+        addChild(childViewController)
+
+        containerView.addSubview(childViewController.view)
+        childViewController.view.frame = containerView.bounds
+        childViewController.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+
+        childViewController.didMove(toParent: self)
+    }
 }
