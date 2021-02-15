@@ -9,21 +9,38 @@
 import Foundation
 import UIKit
 
-extension UIColor {
+public extension UIColor {
     
-    public convenience init(red: Int, green: Int, blue: Int) {
+    convenience init(red: Int, green: Int, blue: Int, alpha: CGFloat = 1.0) {
         assert(red >= 0 && red <= 255, "Invalid red component")
         assert(green >= 0 && green <= 255, "Invalid green component")
         assert(blue >= 0 && blue <= 255, "Invalid blue component")
         
-        self.init(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: 1.0)
+        self.init(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: alpha)
     }
     
-    public convenience init(rgb: Int) {
+    convenience init(rgb: Int) {
         self.init(
             red: (rgb >> 16) & 0xFF,
             green: (rgb >> 8) & 0xFF,
             blue: rgb & 0xFF
         )
+    }
+
+    convenience init(hexValue: Int, a: CGFloat = 1.0) {
+        self.init(
+            red: (hexValue >> 16) & 0xFF,
+            green: (hexValue >> 8) & 0xFF,
+            blue: hexValue & 0xFF,
+            alpha: a
+        )
+    }
+
+    static func adaptive(dark: UIColor, light: UIColor) -> UIColor {
+        if #available(iOS 13.0, *) {
+            return UIColor { $0.userInterfaceStyle == .dark ? dark : light }
+        } else {
+            return light
+        }
     }
 }

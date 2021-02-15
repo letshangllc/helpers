@@ -27,6 +27,7 @@
 		E09D5CE721AAFF8E0010CD7F /* lh_helpersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09D5CE621AAFF8E0010CD7F /* lh_helpersTests.swift */; };
 		E09D5CE921AAFF8E0010CD7F /* lh_helpers.h in Headers */ = {isa = PBXBuildFile; fileRef = E09D5CDB21AAFF8E0010CD7F /* lh_helpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E0B7852A24410E8200818739 /* CellIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B7852924410E8200818739 /* CellIdentifiable.swift */; };
+		E0DB53FD25DAD9F10004149B /* DatePickerDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DB53FC25DAD9F10004149B /* DatePickerDialog.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		E09D5CE621AAFF8E0010CD7F /* lh_helpersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lh_helpersTests.swift; sourceTree = "<group>"; };
 		E09D5CE821AAFF8E0010CD7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0B7852924410E8200818739 /* CellIdentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellIdentifiable.swift; sourceTree = "<group>"; };
+		E0DB53FC25DAD9F10004149B /* DatePickerDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerDialog.swift; sourceTree = "<group>"; };
 		E8EFB46CFBAAACB0C2B667B2 /* Pods-lh-helpersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lh-helpersTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-lh-helpersTests/Pods-lh-helpersTests.release.xcconfig"; sourceTree = "<group>"; };
 		F09F647C25725B944041EDBC /* Pods-lh-helpers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lh-helpers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-lh-helpers/Pods-lh-helpers.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -148,6 +150,7 @@
 				E09703B5244C8D8300E11E6E /* LoadingButton.swift */,
 				E09703B7244C900E00E11E6E /* Nibible.swift */,
 				E01FA6D42471614C00CF4868 /* AvatarView.swift */,
+				E0DB53FC25DAD9F10004149B /* DatePickerDialog.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -370,6 +373,7 @@
 				E01FA6B12470171D00CF4868 /* UITableViewCell+Extensions.swift in Sources */,
 				E022692021AC5E4E0021F500 /* NumberExtensions.swift in Sources */,
 				E022691F21AC5E4E0021F500 /* AlertUtils.swift in Sources */,
+				E0DB53FD25DAD9F10004149B /* DatePickerDialog.swift in Sources */,
 				E01FA6D52471614C00CF4868 /* AvatarView.swift in Sources */,
 				E01FC79D21ACB87200855D62 /* StringExtenstions.swift in Sources */,
 			);
@@ -522,6 +526,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 56NQ7Z9L75;
@@ -550,6 +555,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 56NQ7Z9L75;
