@@ -34,6 +34,7 @@ public extension Request {
         }
         
         var request = URLRequest(url: url)
+        print(url)
         request.allHTTPHeaderFields = headers
         
         let session = URLSession.shared
