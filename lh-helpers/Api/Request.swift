@@ -55,7 +55,7 @@ public extension Request {
             } catch {
                 print(error)
                 DispatchQueue.main.async {
-                    result(.failure(error: "Error: did not receive data"))
+                    result(.failure(error: "Error: \(error.localizedDescription)"))
                 }
             }
         })
